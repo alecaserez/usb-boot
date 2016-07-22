@@ -1,0 +1,8 @@
+En terminal: diskutil list
+Identificar el disco /dev/disk0, /dev/disk1, /dev/disk2… etc
+
+diskutil unmountDisk /dev/disk1 #seleccionar el que corresponde al USB
+
+sudo dd if=/path/to/archivo.iso of=/dev/disk1 bs=1m Sustituyendo por las variables correspondientes.
+
+Por último diskutil eject /dev/disk1 ya esta listo.
